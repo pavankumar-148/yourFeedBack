@@ -5,7 +5,7 @@ import FeedbackForm from "./components/FeedbackForm";
 import FeedbackList from "./components/FeedbackList";
 import RatingChart from "./components/RatingChart";
 
-const ADMIN_USER = "admim";
+const ADMIN_USER = "admin";
 const ADMIN_PASS = "pavan";
 
 export default function App() {
