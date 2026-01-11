@@ -1,0 +1,172 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.hero-nav {
+  position: relative;
+  width: 100%;
+  height: 90px; /* mobile default */
+  overflow: hidden;
+}
+
+.hero-img {
+  width: 100%;
+  height: 90px;
+  object-fit: fill; /* VERY IMPORTANT */
+}
+
+.hero-overlay {
+  
+  background: rgba(255, 255, 255, 0.199);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-title {
+  color: rgb(0, 0, 0);
+ 
+}
+
+.admin-float-btn {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+
+  border: none;
+  background: #ff4d4d;
+  color: white;
+  font-size: 16px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+}
+
+.admin-icon-btn {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  border: none;
+  background: #ff4d4d;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.content {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.card {
+  width: 100%;
+  max-width: 420px;
+  background: white;
+  padding: 16px;
+  border-radius: 14px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+}
+
+button {
+  padding: 10px;
+  width: 100%;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+}
+
+.stars {
+  font-size: 28px;
+  display: flex;
+  gap: 6px;
+}
+
+.stars span {
+  color: #ccc;
+  cursor: pointer;
+}
+
+.stars .active {
+  color: rgb(255, 217, 0);
+}
+
+.feedback {
+  background: #f4f4f4;
+  padding: 10px;
+  border-radius: 8px;
+  margin-top: 8px;
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+}
+
+.logout {
+  background: red;
+}
+
+.admin-modal {
+  position: absolute;
+  top: 60px;
+  right: 16px;
+}
+
+.admin-modal-content {
+  width: 260px;
+  background: white;
+  padding: 14px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+.overall {
+  font-weight: bold;
+}
+
+@media (min-width: 600px) {
+  .hero-nav {
+    height: 200px;
+  }
+
+  .hero-title {
+    font-size: 26px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero-nav {
+    height: 260px;
+  }
+
+  .hero-title {
+    font-size: 32px;
+  }
+
+  .content {
+    max-width: 900px;
+    margin: auto;
+  }
+}
